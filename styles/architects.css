@@ -56,8 +56,8 @@
     font-weight: 400;
   }
   .primary-button{
-    width: 180px;
-    height: 64px;
+    width: 12rem;
+    height: 4rem;
     border: 0;
     border-radius: 8px;
     background: #FF900E;
@@ -71,28 +71,84 @@
     width: 100%;
     margin-top: 45px;
   }
+ main{
+    padding: 0 240px;
+    margin: 0 auto;
+ }
+ .team-container{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+ }
+ .team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding-left: 60px;
+ }
+ .team-content{
+    padding-left: 60px;
+    padding-right: 60px;
+ }
+ .team-title{
+    color: var(--dark-03, #727272);
+    font-size: 2.8rem;
+    font-weight: 500;
+ }
+ #team-of-our{
+    color: var(--dark-01, #131313);
+    font-size: 45px;
+    font-weight: 700;
+ }
+#team-features-text{
+    color: #FF900E;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+
+
 
   /* Mobile Responsive */
   @media screen and (max-width:576px) {
-
+  /* Header Responsive Start */
     header{
-        padding: 5px;
+        padding: 0px;
     }
     nav{
         flex-direction: column;
       }
-      
       .banner-content{
-        padding: 5px;
+        padding: 0px;
         text-align: center;
         margin: 0 auto;
       }
+      /* Header Responsive End */
 
+      /* Team Responsive Start */
+      main{
+        padding: 0;
+        margin: 0 auto;
+     }
+      .team-container{
+        flex-direction: column;
+        flex-direction: column-reverse;
+     }
+     .team-img-container{
+        
+        padding-left: 0px;
+        grid-template-columns: 1fr;
+     }
+     .team-content{
+        padding-left: 0px;
+        padding-right: 0px;
+     }
+     /* Team Responsive End */
     
   }
 
   /* Tablet Responsive */
-  @media screen and (min-width:576px) and (max-width:960px) {
+  @media screen and (min-width:577px) and (max-width:960px) {
 
     header{
         padding: 20px;
@@ -106,4 +162,25 @@
         text-align: center;
         margin: 0 auto;
       }
+
+      /* Team Responsive Start */
+      main{
+        padding: 0;
+        margin: 0 auto;
+     }
+      .team-container{
+        flex-direction: column;
+        flex-direction: column-reverse;
+     }
+     .team-img-container{
+        
+        padding-left: 0px;
+        grid-template-columns: repeat(2, 1fr);
+     }
+     .team-content{
+        padding-left: 0px;
+        padding-right: 0px;
+     }
+     /* Team Responsive End */
+
   }
