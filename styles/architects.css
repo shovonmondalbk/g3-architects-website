@@ -72,10 +72,11 @@
     margin-top: 45px;
   }
 
+  /* Mobile Responsive */
   @media screen and (max-width:576px) {
 
     header{
-        padding: 0px;
+        padding: 5px;
     }
     nav{
         flex-direction: column;
@@ -88,4 +89,21 @@
       }
 
     
+  }
+
+  /* Tablet Responsive */
+  @media screen and (min-width:576px) and (max-width:960px) {
+
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+      }
+      
+      .banner-content{
+        padding: 20px;
+        text-align: center;
+        margin: 0 auto;
+      }
   }
